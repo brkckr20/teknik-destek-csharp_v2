@@ -1,0 +1,83 @@
+﻿<Window x:Class="ExtremeTaleplerV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtremeTaleplerV2"
+        mc:Ignorable="d"
+        Title="Extreme Talepler V2.0" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" 
+        AllowsTransparency="True" ShowInTaskbar="True"
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" StateChanged="Window_StateChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!-- Logo ve butonlar -->
+        <Border Background="#4b4b4b" Grid.Column="0" Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Padding="0,5,0,0">
+                    <Label Content="✔    TALEPLER" HorizontalAlignment="Center" FontFamily="Corbel" VerticalAlignment="Center" FontWeight="Bold" Foreground="White" FontSize="15"/>
+                </Border>
+                <Border Grid.Row="1">
+                    <Button Content="+    YENİ EKLE" 
+                            Click="btnYeni_Click"
+                            x:Name="btnYeni"
+                            Style="{DynamicResource menuButonlar}"
+                            />
+                </Border>
+            </Grid>
+        </Border>
+        <!-- Logo ve butonlar -->
+        <Border Background="#4b4b4b" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Background="White">
+                    <DockPanel Width="105" HorizontalAlignment="Right">
+                        <Button Content="_" Style="{DynamicResource miniButonlar}" x:Name="btnKucult" Click="btnKucult_Click"></Button>
+                        <Button Content="□" Style="{DynamicResource miniButonlar}" x:Name="btnBuyult" Click="btnBuyult_Click"></Button>
+                        <Button Content="X" Style="{DynamicResource miniButonlar}"  x:Name="btnKapat" Click="btnKapat_Click"></Button>
+                    </DockPanel>
+                </Border>
+                <Canvas Grid.Row="1">
+                    <GroupBox Foreground="White" Header="Durumu" Width="200" Height="125"
+          HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <StackPanel>
+                            <RadioButton x:Name="rbTum" Content="Tümü" IsChecked="True" Foreground="White" Margin="0,3"/>
+                            <RadioButton x:Name="rbTamamlandi" Content="Tamamlandı" Foreground="White"  Margin="0,3"/>
+                            <RadioButton x:Name="rbBekleyen" Content="Bekleyen" Foreground="White"  Margin="0,3"/>
+                            <RadioButton x:Name="rbIptalEdilen" Content="İptal Edilen" Foreground="White"  Margin="0,3"/>
+                            <RadioButton x:Name="rbIncelenecek" Content="İncelenecek" Foreground="White"  Margin="0,2"/>
+                        </StackPanel>
+                    </GroupBox>
+
+                </Canvas>
+            </Grid>
+        </Border>
+        <!-- Logo ve butonlar -->
+        <Border Background="#4b4b4b" Grid.Column="0" Grid.Row="1">
+            <StackPanel Margin="0,0,4,0">
+                <Button Style="{DynamicResource menuButonlar}" Content="TALEP LİSTESİ" Height="35"/>
+                <Button Style="{DynamicResource menuButonlar}" Content="DEPARTMANLAR" Height="35"/>
+                <Button Style="{DynamicResource menuButonlar}" Content="KULLANICILAR" Height="35"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="1">
+            <Grid x:Name="Content_icerik"></Grid>
+        </Border>
+
+    </Grid>
+</Window>
