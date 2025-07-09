@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Save.png" />
+    <None Remove="wins\Group of Projects.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <Resource Include="Save.png" />
+    <Resource Include="wins\Group of Projects.ico" />
   </ItemGroup>
 
 </Project>

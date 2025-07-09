@@ -1,0 +1,50 @@
+﻿<Window x:Class="ExtremeTaleplerV2.wins.winTalepAciklamalariniGoster"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtremeTaleplerV2.wins"
+        mc:Ignorable="d"
+        Title="Talep Detayları" Loaded="Window_Loaded" Height="450" Width="800" WindowStartupLocation="CenterScreen" FontFamily="Calibri" Icon="/wins/Group of Projects.ico">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="185"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Black" BorderThickness=".4,.4,.4,0">
+            <StackPanel>
+                <DockPanel>
+                    <Label Content="Tarih : " Width="100" FontSize="14"/>
+                    <Label x:Name="tarih_" Content="" FontSize="14"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Kullanıcı : " Width="100" FontSize="14"/>
+                    <Label x:Name="kullanici_" Content="" FontSize="14"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Departman : " Width="100" FontSize="14"/>
+                    <Label x:Name="departman_" Content="" FontSize="14"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Açıklama : " Width="100" FontSize="14"/>
+                    <Border BorderBrush="Black" BorderThickness="0.4" CornerRadius="1" Padding="3">
+                        <TextBlock TextWrapping="Wrap" x:Name="aciklama_" Height="Auto" />
+                    </Border>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1">
+            <DataGrid x:Name="grdDetaylar" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" AutoGenerateColumns="False" RowHeight="24">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Visibility="Hidden" Header="Id" Width="50" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Visibility="Hidden" Header="RefNo" Width="50" Binding="{Binding RefNo}"/>
+                    <DataGridTextColumn Header="Görüşme Notu" Width="150" Binding="{Binding GorusmeNotu}"/>
+                    <DataGridTextColumn Header="Not 1" Width="150" Binding="{Binding Not1}"/>
+                    <DataGridTextColumn Header="Not 2" Width="150" Binding="{Binding Not2}"/>
+                    <DataGridTextColumn Header="Not 3" Width="150" Binding="{Binding Not3}"/>
+                    <DataGridTextColumn Header="Görüşme Tarihi" Width="150" Binding="{Binding Durumu}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Window>

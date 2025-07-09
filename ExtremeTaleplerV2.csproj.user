@@ -10,7 +10,22 @@
     <Compile Update="UControls\uTalepListesi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="winTalepEkle.xaml.cs">
+    <Compile Update="wins\winAciklamaEkle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wins\winTalepAciklamalariniGoster.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wins\winTalepGuncelle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wins\winTalepKaydet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="wins\winYeniTalepEkle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="winTalepGuncelle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +36,22 @@
     <Page Update="UControls\uTalepListesi.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="winTalepEkle.xaml">
+    <Page Update="wins\winAciklamaEkle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wins\winTalepAciklamalariniGoster.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wins\winTalepGuncelle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wins\winTalepKaydet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wins\winYeniTalepEkle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="winTalepGuncelle.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

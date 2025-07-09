@@ -12,18 +12,26 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Border Background="Transparent" Grid.Row="0">
+            
             <DataGrid Padding="0,0,0,10" CanUserSortColumns="True" 
                       x:Name="dtgTalepListei" ItemsSource="{Binding}"
                       HeadersVisibility="Column" AutoGenerateColumns="False"
                       >
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Güncelle" x:Name="cmUpdate" Click="cmUpdate_Click"/>
+                        <MenuItem Header="Sil" x:Name="cmDelete" Click="cmDelete_Click"/>
+                        <MenuItem Header="Listeyi Yenile" x:Name="cmRefreshList" Click="cmRefreshList_Click"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
                 <DataGrid.Resources>
                     <Style TargetType="DataGridColumnHeader">
-                        <Setter Property="Height" Value="40"/>
+                        <Setter Property="Height" Value="32"/>
                         <Setter Property="HorizontalContentAlignment" Value="Left"/>
                         <Setter Property="VerticalContentAlignment" Value="Center"/>
                         <Setter Property="Foreground" Value="Black"/>
-                        <Setter Property="FontSize" Value="15"/>
-                        <!--<Setter Property="FontFamily" Value="Inter"/>-->
+                        <Setter Property="FontSize" Value="16"/>
+                        <Setter Property="FontFamily" Value="Corbel"/>
                     </Style>
                 </DataGrid.Resources>
                 <DataGrid.Columns>
@@ -31,6 +39,7 @@
                     <DataGridTextColumn Binding="{Binding Path=Departman}" Header="Departman" Width="150"/>
                     <DataGridTextColumn Binding="{Binding Path=Kullanici}" Header="Kullanıcı" Width="150"/>
                     <DataGridTextColumn Binding="{Binding Path=Durumu}" Header="Durumu" Width="100"/>
+                    <DataGridTextColumn Binding="{Binding Path=Baslik}" Header="Başlık" Width="100"/>
                     <DataGridTextColumn Binding="{Binding Path=Tarih}" Header="Tarih" Width="100"/>
                     <DataGridTextColumn Binding="{Binding Path=Aciklama}" Header="Açıklama" Width="550"/>
 

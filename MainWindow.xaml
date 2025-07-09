@@ -8,76 +8,77 @@
         Title="Extreme Talepler V2.0" Height="450" Width="800" 
         WindowStartupLocation="CenterScreen" WindowStyle="None" 
         AllowsTransparency="True" ShowInTaskbar="True"
-        MouseDown="Window_MouseDown" Loaded="Window_Loaded" StateChanged="Window_StateChanged">
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" WindowState="Maximized" StateChanged="Window_StateChanged">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="160"/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="170"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <!-- Logo ve butonlar -->
-        <Border Background="#4b4b4b" Grid.Column="0" Grid.Row="0">
+        <Border Grid.Row="0" Background="#ececec" BorderThickness="0,0,0,0.5" BorderBrush="Gray">
+            <Canvas Margin="0,0,10,0">
+                <Button x:Name="closeApp" Click="closeApp_Click" Height="40" Width="40" Canvas.Right="0" Background="Transparent" BorderThickness="0" FontWeight="UltraBold">X</Button>
+                <Label Height="40" VerticalContentAlignment="Center" Content="Extreme Talepler V2.0" Margin="10,0,0,0"></Label>
+            </Canvas>
+        </Border>
+        <Border Grid.Row="1">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Border Grid.Row="0" Padding="0,5,0,0">
-                    <Label Content="✔    TALEPLER" HorizontalAlignment="Center" FontFamily="Corbel" VerticalAlignment="Center" FontWeight="Bold" Foreground="White" FontSize="15"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Background="#2c2c54" BorderThickness="1,0,1,0" BorderBrush="Black">
+                    <StackPanel>
+                        <Button Content="Talep İşlemleri" Height="30" Margin="0,3,0,2" Background="White" Foreground="#2c2c54" FontWeight="DemiBold"/>
+                        <Button Content="Kullanıcı Kartları" Height="30" Margin="0,0,0,10" Background="White" Foreground="#2c2c54" FontWeight="DemiBold"/>
+                        <Label Content="Arama" Margin="0,0,0,3" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="White" BorderThickness="0,1,0,1"/>
+                        <Border Margin="0,0,0,3">
+                            <DockPanel>
+                                <Label Content="Başlık" Foreground="White" Width="57"></Label>
+                                <TextBox x:Name="baslik" TextChanged="baslik_TextChanged" Width="190"/>
+                            </DockPanel>
+                        </Border>
+                        <Border>
+                            <DockPanel>
+                                <Label Content="Açıklama" Foreground="White"></Label>
+                                <TextBox x:Name="aciklama" TextChanged="aciklama_TextChanged"/>
+                            </DockPanel>
+                        </Border>
+                    </StackPanel>
                 </Border>
-                <Border Grid.Row="1">
-                    <Button Content="+    YENİ EKLE" 
-                            Click="btnYeni_Click"
-                            x:Name="btnYeni"
-                            Style="{DynamicResource menuButonlar}"
-                            />
+                <Border Grid.Column="1">
+                    <DataGrid HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" x:Name="grdIslemler" AutoGenerateColumns="False" RowHeight="24">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu FlowDirection="LeftToRight" Width="200" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
+                                <MenuItem Click="FiltreIslemleri_Click" Tag="Tümü" Header="Tümü"></MenuItem>
+                                <MenuItem Click="FiltreIslemleri_Click" Tag="Bekleyenler" Header="Bekleyenler"></MenuItem>
+                                <MenuItem Click="FiltreIslemleri_Click" Tag="Tamamlananlar" Header="Tamamlananlar"></MenuItem>
+                                <MenuItem Click="FiltreIslemleri_Click" Tag="İptal Edilenler" Header="İptal Edilenler"></MenuItem>
+                                <MenuItem Click="FiltreIslemleri_Click" Tag="İncelenecek" Header="İncelenecek"></MenuItem>
+                                <Separator />
+                                <MenuItem Header="İşlemler">
+                                    <MenuItem x:Name="yeniTalep" Click="yeniTalep_Click" Header="Yeni Talep Ekle"/>
+                                    <MenuItem x:Name="talepGuncelle" Click="talepGuncelle_Click" Header="Talebi Güncelle" CommandParameter="{Binding Path=PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"/>
+                                    <MenuItem x:Name="talepSil" Click="talepSil_Click" Header="Talebi Sil"/>
+                                    <Separator/>
+                                    <MenuItem x:Name="BtnTalebeYeniAciklamaEkle" Click="BtnTalebeYeniAciklamaEkle_Click" Header="Talebe Yeni Açıklama Ekle"/>
+                                    <MenuItem x:Name="BtnTalepAciklamalariniGoster" Click="BtnTalepAciklamalariniGoster_Click" Header="Talebin Açıklamalarını Göster"/>
+                                </MenuItem>
+                                <Separator/>
+                                <MenuItem x:Name="listeyiYenile" Click="listeyiYenile_Click" Header="Yenile"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Visibility="Hidden" Header="Id" Width="50" Binding="{Binding Id}"/>
+                            <DataGridTextColumn Header="Kullanıcı" Width="90" Binding="{Binding Departman}"/>
+                            <DataGridTextColumn Header="Departman" Width="90" Binding="{Binding Kullanici}"/>
+                            <DataGridTextColumn Header="Başlık" Width="190" Binding="{Binding Baslik}"/>
+                            <DataGridTextColumn Header="Açıklama" Width="490" Binding="{Binding Aciklama}"/>
+                            <DataGridTextColumn Header="Durumu" Width="75" Binding="{Binding Durumu}"/>
+                            <DataGridTextColumn Header="Güncelleme" Width="75" Binding="{Binding Güncelleme}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Border>
             </Grid>
         </Border>
-        <!-- Logo ve butonlar -->
-        <Border Background="#4b4b4b" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="35"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Border Background="White">
-                    <DockPanel Width="105" HorizontalAlignment="Right">
-                        <Button Content="_" Style="{DynamicResource miniButonlar}" x:Name="btnKucult" Click="btnKucult_Click"></Button>
-                        <Button Content="□" Style="{DynamicResource miniButonlar}" x:Name="btnBuyult" Click="btnBuyult_Click"></Button>
-                        <Button Content="X" Style="{DynamicResource miniButonlar}"  x:Name="btnKapat" Click="btnKapat_Click"></Button>
-                    </DockPanel>
-                </Border>
-                <Canvas Grid.Row="1">
-                    <GroupBox Foreground="White" Header="Durumu" Width="200" Height="125"
-          HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <StackPanel>
-                            <RadioButton x:Name="rbTum" Content="Tümü" IsChecked="True" Foreground="White" Margin="0,3"/>
-                            <RadioButton x:Name="rbTamamlandi" Content="Tamamlandı" Foreground="White"  Margin="0,3"/>
-                            <RadioButton x:Name="rbBekleyen" Content="Bekleyen" Foreground="White"  Margin="0,3"/>
-                            <RadioButton x:Name="rbIptalEdilen" Content="İptal Edilen" Foreground="White"  Margin="0,3"/>
-                            <RadioButton x:Name="rbIncelenecek" Content="İncelenecek" Foreground="White"  Margin="0,2"/>
-                        </StackPanel>
-                    </GroupBox>
-
-                </Canvas>
-            </Grid>
-        </Border>
-        <!-- Logo ve butonlar -->
-        <Border Background="#4b4b4b" Grid.Column="0" Grid.Row="1">
-            <StackPanel Margin="0,0,4,0">
-                <Button Style="{DynamicResource menuButonlar}" Content="TALEP LİSTESİ" Height="35"/>
-                <Button Style="{DynamicResource menuButonlar}" Content="DEPARTMANLAR" Height="35"/>
-                <Button Style="{DynamicResource menuButonlar}" Content="KULLANICILAR" Height="35"/>
-            </StackPanel>
-        </Border>
-
-        <Border Grid.Column="1" Grid.Row="1">
-            <Grid x:Name="Content_icerik"></Grid>
-        </Border>
-
     </Grid>
 </Window>
