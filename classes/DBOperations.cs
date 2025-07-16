@@ -422,5 +422,40 @@ namespace ExtremeTaleplerV2.classes
                 return false;
             }
         }
+        public static bool GuncellemeSil(int id)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
+                {
+                    conn.Open();
+                    string sql = @"DELETE FROM Notes WHERE Id = @Id";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", id);
+
+                        if (id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", id);
+                        }
+                        if (MessageBox.Show("Kayıt silinecek. Emin misiniz?\nBu işlem geri alınamaz!", "Uyarı", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                        {
+                            cmd.ExecuteNonQuery();
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Silme sırasında hata oluştu: " + ex.Message, "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
     }
 }

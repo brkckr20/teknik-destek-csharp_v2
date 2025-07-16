@@ -35,6 +35,13 @@
         </Border>
         <Border Grid.Row="1">
             <DataGrid x:Name="grdDetaylar" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" AutoGenerateColumns="False" RowHeight="24">
+                <DataGrid.ContextMenu>
+                    <ContextMenu FlowDirection="LeftToRight" Width="200" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
+                        <MenuItem x:Name="guncellemeSil" Click="guncellemeSil_Click" Header="Kaydı Sil"/>
+                        <MenuItem x:Name="talepGuncelle" Header="Güncelleme Ekle / Güncelle" CommandParameter="{Binding Path=PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"/>
+                        <MenuItem x:Name="guncellemeYenile" Click="guncellemeYenile_Click" Header="Yenile"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
                 <DataGrid.Columns>
                     <DataGridTextColumn Visibility="Hidden" Header="Id" Width="50" Binding="{Binding Id}"/>
                     <DataGridTextColumn Visibility="Hidden" Header="RefNo" Width="50" Binding="{Binding RefNo}"/>
@@ -42,7 +49,7 @@
                     <DataGridTextColumn Header="Not 1" Width="150" Binding="{Binding Not1}"/>
                     <DataGridTextColumn Header="Not 2" Width="150" Binding="{Binding Not2}"/>
                     <DataGridTextColumn Header="Not 3" Width="150" Binding="{Binding Not3}"/>
-                    <DataGridTextColumn Header="Görüşme Tarihi" Width="150" Binding="{Binding Durumu}"/>
+                    <DataGridTextColumn Header="Görüşme Tarihi" Width="150" Binding="{Binding GorusmeTarihi}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Border>

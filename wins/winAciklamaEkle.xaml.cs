@@ -27,6 +27,8 @@ namespace ExtremeTaleplerV2.wins
             {
                 DateTime selectedDate = dpGorusmeTarihi.SelectedDate.Value; // Nullable'dan DateTime'a dönüştür
                 DBOperations.AciklamaEkle(selectedDate, txtGorusmeNotu, txtNot1, txtNot2, txtNot3, _talep_id);
+                MessageBox.Show("Kayıt işlemi başarılı", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Close();
             }
             else
             {
