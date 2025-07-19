@@ -16,6 +16,9 @@
     <Compile Update="wins\winTalepAciklamalariniGoster.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="wins\winTalepDetayiGuncelle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="wins\winTalepGuncelle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="wins\winTalepAciklamalariniGoster.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="wins\winTalepDetayiGuncelle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="wins\winTalepGuncelle.xaml">

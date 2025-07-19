@@ -48,5 +48,26 @@ namespace ExtremeTaleplerV2.wins
                 MessageBox.Show("Lütfen bir satır seçtiğinizden emin olun.");
             }
         }
+
+        private void talepGuncelle_Click(object sender, RoutedEventArgs e)
+        {
+            if (grdDetaylar.SelectedItem is DataRowView currentSelectedRow)
+            {
+                if (currentSelectedRow.Row.Table.Columns.Contains("Id"))
+                {
+                    int id = Convert.ToInt32(currentSelectedRow["Id"]);
+                    string gorusmeNotu = currentSelectedRow["GorusmeNotu"].ToString();
+                    string not1 = currentSelectedRow["Not1"].ToString();
+                    string not2 = currentSelectedRow["Not2"].ToString();
+                    string not3 = currentSelectedRow["Not3"].ToString();
+                    winTalepDetayiGuncelle win = new winTalepDetayiGuncelle(id, gorusmeNotu, not1, not2, not3);
+                    win.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen bir satır seçtiğinizden emin olun.");
+            }
+        }
     }
 }
