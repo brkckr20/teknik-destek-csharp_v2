@@ -28,7 +28,7 @@ namespace ExtremeTaleplerV2.wins
 
         private void btnKaydet_Click(object sender, RoutedEventArgs e)
         {
-            if (DBOperations.Ekle(txtDepartman.Text, txtKullanici.Text, txtBaslik.Text, "açıklama", "1", Convert.ToDateTime(dpTarih.SelectedDate), 0))
+            if (DBOperations.Ekle(txtDepartman.Text, txtKullanici.Text, txtBaslik.Text, txtAciklama.Text, "1", Convert.ToDateTime(dpTarih.SelectedDate), 0))
             {
                 MessageBox.Show("Kayıt işlemi başarıyla gerçekleştirildi", "Bilgilendir", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Close();
