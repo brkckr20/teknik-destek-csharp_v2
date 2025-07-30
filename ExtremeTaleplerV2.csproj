@@ -9,17 +9,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Bookmark.png" />
+    <None Remove="Find User Male_1.png" />
     <None Remove="Save.png" />
+    <None Remove="Toolbox.png" />
     <None Remove="wins\Group of Projects.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fluent.Ribbon" Version="11.0.1" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Bookmark.png" />
+    <Resource Include="Find User Male_1.png" />
     <Resource Include="Save.png" />
+    <Resource Include="Toolbox.png" />
     <Resource Include="wins\Group of Projects.ico" />
   </ItemGroup>
 

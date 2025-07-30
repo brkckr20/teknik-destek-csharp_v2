@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "T+FTkxvfnxbph0x/WIXRkX94Qxz3z5oz/v44O86Y2zZ2zaQs7m9BhIO3uE69nsclt702WJi1CbyD1MsmKjZ65g==",
+  "dgSpecHash": "DQAePLZR659pnxJwcmX3CRzeN1DStLYS+clmZPWoa165HDnOkZaNieqS5zgjF007YFc8RD73wH9PK4sMSGnJiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\casper\\Desktop\\Klasörler\\ExtremeTalepler\\ExtremeTaleplerV2\\ExtremeTaleplerV2\\ExtremeTaleplerV2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casper\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\controlzex\\7.0.1\\controlzex.7.0.1.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\fluent.ribbon\\11.0.1\\fluent.ribbon.11.0.1.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.data.sqlclient\\6.0.2\\microsoft.data.sqlclient.6.0.2.nupkg.sha512",
@@ -25,6 +27,7 @@
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.5.0\\microsoft.identitymodel.protocols.openidconnect.7.5.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.5.0\\microsoft.identitymodel.tokens.7.5.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -42,7 +45,7 @@
     "C:\\Users\\casper\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\casper\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []

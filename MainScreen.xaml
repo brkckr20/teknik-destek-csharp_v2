@@ -1,0 +1,32 @@
+﻿<Window x:Class="ExtremeTaleplerV2.MainScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
+        xmlns:local="clr-namespace:ExtremeTaleplerV2"
+        mc:Ignorable="d"
+        Title="Extreme Talepleri" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ribbon:Ribbon Grid.Row="0" Margin="0,-24,0,0" x:Name="mainRibbon" ShowQuickAccessToolBarOnTop="False" VerticalAlignment="Top">
+            <RibbonTab Header="Genel">
+                <RibbonGroup Header="İşlemler">
+                    <RibbonButton x:Name="btnTalepIslemleri" Click="btnTalepIslemleri_Click" Label="Talep İşlemleri" LargeImageSource="/Bookmark.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Kartlar">
+                <RibbonGroup Header="Kart İşlemleri">
+                    <RibbonButton Label="Kullanıcı Kartı" LargeImageSource="/Find User Male_1.png"/>
+                    <RibbonButton Label="Departman Kartı" LargeImageSource="/Toolbox.png" />
+                </RibbonGroup>
+            </RibbonTab>
+        </ribbon:Ribbon>
+        <TabControl Grid.Row="1" x:Name="mainTabControl" Margin="0,-1,0,0">
+        </TabControl>
+    </Grid>
+</Window>

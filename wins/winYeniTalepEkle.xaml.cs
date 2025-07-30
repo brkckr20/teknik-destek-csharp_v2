@@ -23,16 +23,16 @@ namespace ExtremeTaleplerV2.wins
         public winYeniTalepEkle()
         {
             InitializeComponent();
-            dpTarih.SelectedDate = DateTime.Now;
+            //dpTarih.SelectedDate = DateTime.Now;
         }
 
         private void btnKaydet_Click(object sender, RoutedEventArgs e)
         {
-            if (DBOperations.Ekle(txtDepartman.Text, txtKullanici.Text, txtBaslik.Text, txtAciklama.Text, "1", Convert.ToDateTime(dpTarih.SelectedDate), 0))
-            {
-                MessageBox.Show("Kayıt işlemi başarıyla gerçekleştirildi", "Bilgilendir", MessageBoxButton.OK, MessageBoxImage.Information);
-                this.Close();
-            }
+            //if (DBOperations.Ekle(txtDepartman.Text, txtKullanici.Text, txtBaslik.Text, txtAciklama.Text, "1", Convert.ToDateTime(dpTarih.SelectedDate), 0))
+            //{
+            //    MessageBox.Show("Kayıt işlemi başarıyla gerçekleştirildi", "Bilgilendir", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    this.Close();
+            //}
         }
     }
 }
