@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using ExtremeTaleplerV2.classes;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ExtremeTaleplerV2.UControls
 {
@@ -20,9 +8,50 @@ namespace ExtremeTaleplerV2.UControls
     /// </summary>
     public partial class UC_TalepIslemleri : UserControl
     {
+        string filtreDurumu = "-1";
         public UC_TalepIslemleri()
         {
             InitializeComponent();
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
+        }
+        void RadioButtonaGoreFiltrele()
+        {
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
+        }
+
+        private void chtumu_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            filtreDurumu = "-1";
+            RadioButtonaGoreFiltrele();
+        }
+
+        private void chtamamlan_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            filtreDurumu = "2";
+            RadioButtonaGoreFiltrele();
+        }
+
+        private void chbekleyen_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            filtreDurumu = "1";
+            RadioButtonaGoreFiltrele();
+        }
+
+        private void chiptal_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            filtreDurumu = "0";
+            RadioButtonaGoreFiltrele();
+        }
+
+        private void chincele_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            filtreDurumu = "3";
+            RadioButtonaGoreFiltrele();
+        }
+
+        private void baslik1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // buradan devam edilecek
         }
     }
 }

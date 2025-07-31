@@ -8,10 +8,49 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="250"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Background="DarkOrange"></Border>
-        <Border Grid.Column="1"></Border>
+        <Border Grid.Column="0" BorderBrush="#ececec" BorderThickness="0,0,1,0" Padding="4,0">
+            <StackPanel>
+                <Label Content="Filtreler" FontFamily="Bahnschrift"></Label>
+                <DockPanel Margin="0,0,0,2">
+                    <Label Content="Mail Başlığı :" FontFamily="Bahnschrift" Width="80"/>
+                    <TextBox x:Name="baslik1" TextChanged="baslik1_TextChanged" VerticalContentAlignment="Center" FontFamily="Bahnschrift"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Kullanıcı :" FontFamily="Bahnschrift" Width="80"/>
+                    <TextBox VerticalContentAlignment="Center" FontFamily="Bahnschrift"/>
+                </DockPanel>
+                <Border Height="1" Margin="0,4" Background="#ececec"/>
+                <StackPanel Margin="0,4,0,0" >
+                    <Label Content="Durumu" FontFamily="Bahnschrift"/>
+                    <RadioButton x:Name="chtumu" Checked="chtumu_Checked" Margin="0,0,0,4" Content="Tümü" GroupName="xx" FontFamily="Bahnschrift"/>
+                    <RadioButton x:Name="chtamamlan" Checked="chtamamlan_Checked" Margin="0,0,0,4" Content="Tamamlananlar" GroupName="xx" FontFamily="Bahnschrift"/>
+                    <RadioButton x:Name="chbekleyen" Checked="chbekleyen_Checked" Margin="0,0,0,4" Content="Bekleyenler" GroupName="xx" FontFamily="Bahnschrift"/>
+                    <RadioButton x:Name="chiptal" Checked="chiptal_Checked" Margin="0,0,0,4" Content="İptal Edilenler" GroupName="xx" FontFamily="Bahnschrift"/>
+                    <RadioButton x:Name="chincele" Checked="chincele_Checked" Margin="0,0,0,4" Content="İncelenecekler" GroupName="xx" FontFamily="Bahnschrift"/>
+                </StackPanel>
+                <Border Height="1" Margin="0,4" Background="#ececec"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1">
+            <DataGrid FontFamily="Bahnschrift" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" x:Name="grdIslemler" AutoGenerateColumns="False" RowHeight="24">
+                <DataGrid.ContextMenu>
+                    <ContextMenu FlowDirection="LeftToRight" Width="200" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
+                        <MenuItem x:Name="yeniTalep1" Header="Yeni Talep Ekle"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Visibility="Hidden" Header="Id" Width="50" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Kullanıcı" Width="90" Binding="{Binding Departman}"/>
+                    <DataGridTextColumn Header="Departman" Width="90" Binding="{Binding Kullanici}"/>
+                    <DataGridTextColumn Header="Başlık" Width="190" Binding="{Binding Baslik}"/>
+                    <DataGridTextColumn Header="Açıklama" Width="490" Binding="{Binding Aciklama}"/>
+                    <DataGridTextColumn Header="Durumu" Width="75" Binding="{Binding Durumu}"/>
+                    <DataGridTextColumn Header="Güncelleme" Width="75" Binding="{Binding Güncelleme}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </UserControl>
