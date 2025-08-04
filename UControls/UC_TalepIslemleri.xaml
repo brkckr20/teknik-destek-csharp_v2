@@ -20,7 +20,7 @@
                 </DockPanel>
                 <DockPanel>
                     <Label Content="Kullanıcı :" FontFamily="Bahnschrift" Width="80"/>
-                    <TextBox VerticalContentAlignment="Center" FontFamily="Bahnschrift"/>
+                    <TextBox x:Name="mailAciklama" TextChanged="mailAciklama_TextChanged" VerticalContentAlignment="Center" FontFamily="Bahnschrift"/>
                 </DockPanel>
                 <Border Height="1" Margin="0,4" Background="#ececec"/>
                 <StackPanel Margin="0,4,0,0" >
@@ -38,7 +38,7 @@
             <DataGrid FontFamily="Bahnschrift" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" x:Name="grdIslemler" AutoGenerateColumns="False" RowHeight="24">
                 <DataGrid.ContextMenu>
                     <ContextMenu FlowDirection="LeftToRight" Width="200" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
-                        <MenuItem x:Name="yeniTalep1" Header="Yeni Talep Ekle"/>
+                        <MenuItem Click="yeniTalep1_Click" x:Name="yeniTalep1" Header="Yeni Talep Ekle"/>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

@@ -16,6 +16,7 @@
         <ribbon:Ribbon Grid.Row="0" Margin="0,-24,0,0" x:Name="mainRibbon" ShowQuickAccessToolBarOnTop="False" VerticalAlignment="Top">
             <RibbonTab Header="Genel">
                 <RibbonGroup Header="İşlemler">
+                    <!--<RibbonButton x:Name="btnYeniTalepEkle" Label="Yeni Talep Ekle" LargeImageSource="/Plus.png"/>-->
                     <RibbonButton x:Name="btnTalepIslemleri" Click="btnTalepIslemleri_Click" Label="Talep İşlemleri" LargeImageSource="/Bookmark.png"/>
                 </RibbonGroup>
             </RibbonTab>
