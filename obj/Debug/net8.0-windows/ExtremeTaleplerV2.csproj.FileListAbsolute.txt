@@ -98,3 +98,5 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ref\ExtremeTaleplerV2.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.baml
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.g.cs
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.baml

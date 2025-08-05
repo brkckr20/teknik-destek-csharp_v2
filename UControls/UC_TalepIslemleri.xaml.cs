@@ -85,7 +85,8 @@ namespace ExtremeTaleplerV2.UControls
 
         private void yeniTalep1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Yeni talep ekleme ekranı açılacak");
+            NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(true);
+            win.ShowDialog();
         }
     }
 }

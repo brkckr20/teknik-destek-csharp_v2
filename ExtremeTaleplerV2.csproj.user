@@ -10,6 +10,9 @@
     <Compile Update="MainScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="NewWins\WinTalepEkleGuncelle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UControls\UC_TalepIslemleri.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewWins\WinTalepEkleGuncelle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UControls\UC_TalepIslemleri.xaml">
