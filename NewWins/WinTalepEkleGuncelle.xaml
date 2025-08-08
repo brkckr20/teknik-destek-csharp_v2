@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExtremeTaleplerV2.NewWins"
         mc:Ignorable="d"
-        Title="Talep Ekle" WindowStartupLocation="CenterScreen" MaxWidth="336" MaxHeight="422" Height="422" Width="336" FontFamily="Bahnschrift" Icon="/Bookmark.png">
+        Title="Talep Ekle" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MaxWidth="336" MaxHeight="422" Height="422" Width="336" FontFamily="Bahnschrift" Icon="/Bookmark.png">
     <StackPanel x:Name="stckWrapper" VerticalAlignment="Top" Margin="5,5,5,0" Height="390">
         <Border Height="25" Margin="0,0,0,5">
             <DockPanel>
@@ -42,10 +42,10 @@
             <DockPanel>
                 <Label HorizontalAlignment="Left" Width="100" Content="Durumu : "/>
                 <StackPanel>
-                    <RadioButton Content="Tamamlandı" Margin="0,0,0,3"/>
-                    <RadioButton Content="Bekliyor" Margin="0,0,0,3"/>
-                    <RadioButton Content="İncelenecek" Margin="0,0,0,3"/>
-                    <RadioButton Content="İptal Edildi" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="tamam1" Content="Tamamlandı" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="bekle1" Content="Bekliyor" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="incele1" Content="İncelenecek" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="iptal1" Content="İptal Edildi" Margin="0,0,0,3"/>
                 </StackPanel>
             </DockPanel>
         </Border>

@@ -14,6 +14,13 @@
     <None Remove="Plus.png" />
     <None Remove="Save.png" />
     <None Remove="Toolbox.png" />
+    <None Remove="UControls\Back.png" />
+    <None Remove="UControls\Forward.png" />
+    <None Remove="UControls\List.png" />
+    <None Remove="UControls\Plus_1.png" />
+    <None Remove="UControls\Save.png" />
+    <None Remove="UControls\Save_3.png" />
+    <None Remove="UControls\Trash.png" />
     <None Remove="wins\Group of Projects.ico" />
   </ItemGroup>
 
@@ -29,6 +36,13 @@
     <Resource Include="Plus.png" />
     <Resource Include="Save.png" />
     <Resource Include="Toolbox.png" />
+    <Resource Include="UControls\Back.png" />
+    <Resource Include="UControls\Forward.png" />
+    <Resource Include="UControls\List.png" />
+    <Resource Include="UControls\Plus_1.png" />
+    <Resource Include="UControls\Save.png" />
+    <Resource Include="UControls\Save_3.png" />
+    <Resource Include="UControls\Trash.png" />
     <Resource Include="wins\Group of Projects.ico" />
   </ItemGroup>
 

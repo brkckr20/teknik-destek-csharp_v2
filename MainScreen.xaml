@@ -23,7 +23,7 @@
             <RibbonTab Header="Kartlar">
                 <RibbonGroup Header="Kart İşlemleri">
                     <RibbonButton Label="Kullanıcı Kartı" LargeImageSource="/Find User Male_1.png"/>
-                    <RibbonButton Label="Departman Kartı" LargeImageSource="/Toolbox.png" />
+                    <RibbonButton x:Name="btnDepartmanKarti" Click="btnDepartmanKarti_Click" Label="Departman Kartı" LargeImageSource="/Toolbox.png" />
                 </RibbonGroup>
             </RibbonTab>
         </ribbon:Ribbon>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\App.xaml
-121782710583
+13-1584531976
 
-211556860534
+22161096550
 228-1609840105
-MainScreen.xaml;MainWindow.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
+MainScreen.xaml;MainWindow.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_KullaniciVeDepartmanKarti.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
 
-True
+False
 

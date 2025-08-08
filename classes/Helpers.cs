@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 
@@ -15,7 +11,7 @@ namespace ExtremeTaleplerV2.classes
         {
             if (tb == null)
             {
-                MessageBox.Show("Filtreleme yapılamadı: Ana veri tablosu mevcut değil.");
+                System.Windows.MessageBox.Show("Filtreleme yapılamadı: Ana veri tablosu mevcut değil.");
                 return;
             }
 
@@ -47,6 +43,23 @@ namespace ExtremeTaleplerV2.classes
 
             dataView.RowFilter = filterExpression;
             dg.ItemsSource = dataView;
+        }
+        public int GetRowId(DataGrid dataGrid)
+        {
+            if (dataGrid.SelectedItem is DataRowView currentSelectedRow)
+            {
+                if (currentSelectedRow.Row.Table.Columns.Contains("Id"))
+                {
+                    int id = Convert.ToInt32(currentSelectedRow["Id"]);
+                    return id;
+                }
+                return 0;
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Lütfen bir satır seçtiğinizden emin olun.");
+                return 0;
+            }
         }
     }
 }

@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="ExtremeTaleplerV2.UControls.UC_KullaniciVeDepartmanKarti"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExtremeTaleplerV2.UControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" FontFamily="Bahnschrift">
+    <StackPanel>
+        <Border BorderThickness="0.5" BorderBrush="#ececec" >
+            <DockPanel HorizontalAlignment="Left" Margin="2">
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Source="/UControls/Plus_1.png" Width="24" Height="24" />
+                        <TextBlock Text="Yeni" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image  Width="24" Height="24" Source="/UControls/Save_3.png" />
+                        <TextBlock Text="Kaydet" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image  Width="24" Height="24" Source="/UControls/List.png"  />
+                        <TextBlock Text="Liste" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image  Width="24" Height="24" Source="/UControls/Back.png"  />
+                        <TextBlock Text="Geri" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image  Width="24" Height="24" Source="/UControls/Forward.png"  />
+                        <TextBlock Text="İleri" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image  Width="24" Height="24" Source="/UControls/Trash.png"  />
+                        <TextBlock Text="Sil" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Button>
+            </DockPanel>
+        </Border>
+        <StackPanel Margin="2">
+            <DockPanel Width="300" HorizontalAlignment="Left">
+                <Label Content="Departman Adı : "/>
+                <TextBox/>
+            </DockPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

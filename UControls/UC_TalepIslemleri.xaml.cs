@@ -85,7 +85,14 @@ namespace ExtremeTaleplerV2.UControls
 
         private void yeniTalep1_Click(object sender, RoutedEventArgs e)
         {
-            NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(true);
+            NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(true,0);
+            win.ShowDialog();
+        }
+
+        private void talepGuncelle1_Click(object sender, RoutedEventArgs e)
+        {
+            int row_id = helpers.GetRowId(grdIslemler);
+            NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(false, row_id);
             win.ShowDialog();
         }
     }

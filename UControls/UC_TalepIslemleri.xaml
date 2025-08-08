@@ -39,6 +39,7 @@
                 <DataGrid.ContextMenu>
                     <ContextMenu FlowDirection="LeftToRight" Width="200" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}">
                         <MenuItem Click="yeniTalep1_Click" x:Name="yeniTalep1" Header="Yeni Talep Ekle"/>
+                        <MenuItem Click="talepGuncelle1_Click" x:Name="talepGuncelle1" Header="Talebi Güncelle" CommandParameter="{Binding Path=PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"/>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

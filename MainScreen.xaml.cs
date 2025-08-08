@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace ExtremeTaleplerV2
 {
-    /// <summary>
-    /// Interaction logic for MainScreen.xaml
-    /// </summary>
     public partial class MainScreen: Window
     {
         public MainScreen()
@@ -88,6 +85,12 @@ namespace ExtremeTaleplerV2
         {
             UControls.UC_TalepIslemleri uc = new UControls.UC_TalepIslemleri();
             AddOrSelectTab("Talep İşlemleri", uc);
+        }
+
+        private void btnDepartmanKarti_Click(object sender, RoutedEventArgs e)
+        {
+            UControls.UC_KullaniciVeDepartmanKarti uc = new UControls.UC_KullaniciVeDepartmanKarti();
+            AddOrSelectTab("Departman Kartı", uc);
         }
     }
 }
