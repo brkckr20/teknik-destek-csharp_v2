@@ -9,7 +9,7 @@
     <StackPanel>
         <Border BorderThickness="0.5" BorderBrush="#ececec" >
             <DockPanel HorizontalAlignment="Left" Margin="2">
-                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0">
+                <Button x:Name="btnYeni1" Click="btnYeni1_Click" Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0">
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image Source="/UControls/Plus_1.png" Width="24" Height="24" />
                         <TextBlock Text="Yeni" HorizontalAlignment="Center" Margin="0,4,0,0"/>
@@ -50,7 +50,7 @@
         <StackPanel Margin="2">
             <DockPanel Width="300" HorizontalAlignment="Left">
                 <Label Content="Departman Adı : "/>
-                <TextBox/>
+                <TextBox VerticalContentAlignment="Center"/>
             </DockPanel>
         </StackPanel>
     </StackPanel>

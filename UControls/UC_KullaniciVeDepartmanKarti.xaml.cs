@@ -24,5 +24,10 @@ namespace ExtremeTaleplerV2.UControls
         {
             InitializeComponent();
         }
+
+        private void btnYeni1_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("sdasdad");
+        }
     }
 }
