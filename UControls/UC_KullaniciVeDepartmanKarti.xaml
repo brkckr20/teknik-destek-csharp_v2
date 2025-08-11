@@ -15,13 +15,13 @@
                         <TextBlock Text="Yeni" HorizontalAlignment="Center" Margin="0,4,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                <Button x:Name="btnKaydet1" Click="btnKaydet1_Click" Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image  Width="24" Height="24" Source="/UControls/Save_3.png" />
                         <TextBlock Text="Kaydet" HorizontalAlignment="Center" Margin="0,4,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                <Button x:Name="btnListe1" Click="btnListe1_Click" Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image  Width="24" Height="24" Source="/UControls/List.png"  />
                         <TextBlock Text="Liste" HorizontalAlignment="Center" Margin="0,4,0,0"/>
@@ -50,7 +50,7 @@
         <StackPanel Margin="2">
             <DockPanel Width="300" HorizontalAlignment="Left">
                 <Label Content="Departman Adı : "/>
-                <TextBox VerticalContentAlignment="Center"/>
+                <TextBox VerticalContentAlignment="Center" x:Name="txtAdi1"/>
             </DockPanel>
         </StackPanel>
     </StackPanel>
