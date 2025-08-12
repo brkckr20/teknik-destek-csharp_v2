@@ -22,6 +22,17 @@ namespace ExtremeTaleplerV2.NewWins.Lists
         public WinDepartmanListesi()
         {
             InitializeComponent();
+            dgDepartman.ItemsSource = new List<Departman>
+        {
+            new Departman { Id = 1, Ad = "Muhasebe" },
+            new Departman { Id = 2, Ad = "İK" },
+            new Departman { Id = 3, Ad = "Satın Alma" }
+        };
+        }
+        public class Departman
+        {
+            public int Id { get; set; }
+            public string Ad { get; set; }
         }
     }
 }

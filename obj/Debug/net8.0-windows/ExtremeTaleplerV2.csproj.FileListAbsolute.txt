@@ -102,3 +102,6 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.pdb
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.genruntimeconfig.cache
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ref\ExtremeTaleplerV2.dll
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.g.cs
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.baml
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\DataGridExtensions.dll

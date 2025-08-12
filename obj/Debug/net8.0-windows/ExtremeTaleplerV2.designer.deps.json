@@ -53,6 +53,17 @@
           }
         }
       },
+      "DataGridExtensions/2.6.0": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/DataGridExtensions.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        }
+      },
       "Fluent.Ribbon/11.0.1": {
         "dependencies": {
           "ControlzEx": "7.0.1",
@@ -557,6 +568,13 @@
       "sha512": "sha512-4tSt07HNxelgppz120arArf/XiGnzQ3vqp4hHynHweLVd7tuR2tFgQogiG1ZnQ5GglSu+FWW5jVCmz3AtVtYuQ==",
       "path": "controlzex/7.0.1",
       "hashPath": "controlzex.7.0.1.nupkg.sha512"
+    },
+    "DataGridExtensions/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9unJ/zHoO086RhY7kYRwHfUIJqAxUr1E4g+yeVuWGVxphgNg5i6ip1qM5FW95NeG0f6fNfHu1dcjnxa4vcBJmw==",
+      "path": "datagridextensions/2.6.0",
+      "hashPath": "datagridextensions.2.6.0.nupkg.sha512"
     },
     "Fluent.Ribbon/11.0.1": {
       "type": "package",

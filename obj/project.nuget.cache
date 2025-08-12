@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DQAePLZR659pnxJwcmX3CRzeN1DStLYS+clmZPWoa165HDnOkZaNieqS5zgjF007YFc8RD73wH9PK4sMSGnJiw==",
+  "dgSpecHash": "F4SA7jPCel/JOTz8uE19hpKdL2yvGn9byG5+hptDNmUIequ9mQ8R9cUHSAiCIen84FT8v/YSMkSZYyEs4bkxVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\casper\\Desktop\\Klasörler\\ExtremeTalepler\\ExtremeTaleplerV2\\ExtremeTaleplerV2\\ExtremeTaleplerV2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casper\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\controlzex\\7.0.1\\controlzex.7.0.1.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\datagridextensions\\2.6.0\\datagridextensions.2.6.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\fluent.ribbon\\11.0.1\\fluent.ribbon.11.0.1.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",

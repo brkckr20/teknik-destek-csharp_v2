@@ -50,6 +50,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "DataGridExtensions": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
             "Fluent.Ribbon": {
               "target": "Package",
               "version": "[11.0.1, )"

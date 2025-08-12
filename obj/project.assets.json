@@ -67,6 +67,25 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "DataGridExtensions/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.77"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/DataGridExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/DataGridExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Fluent.Ribbon/11.0.1": {
         "type": "package",
         "dependencies": {
@@ -823,6 +842,25 @@
         "lib/net8.0-windows7.0/ControlzEx.dll",
         "lib/net8.0-windows7.0/ControlzEx.xml",
         "logo-mini.png"
+      ]
+    },
+    "DataGridExtensions/2.6.0": {
+      "sha512": "9unJ/zHoO086RhY7kYRwHfUIJqAxUr1E4g+yeVuWGVxphgNg5i6ip1qM5FW95NeG0f6fNfHu1dcjnxa4vcBJmw==",
+      "type": "package",
+      "path": "datagridextensions/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License",
+        "datagridextensions.2.6.0.nupkg.sha512",
+        "datagridextensions.nuspec",
+        "lib/net462/DataGridExtensions.dll",
+        "lib/net462/DataGridExtensions.xml",
+        "lib/net6.0-windows7.0/DataGridExtensions.dll",
+        "lib/net6.0-windows7.0/DataGridExtensions.xml",
+        "lib/net8.0-windows7.0/DataGridExtensions.dll",
+        "lib/net8.0-windows7.0/DataGridExtensions.xml"
       ]
     },
     "Fluent.Ribbon/11.0.1": {
@@ -1991,6 +2029,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "DataGridExtensions >= 2.6.0",
       "Fluent.Ribbon >= 11.0.1",
       "Microsoft.Data.SqlClient >= 6.0.2",
       "System.Data.SqlClient >= 4.9.0"
@@ -2046,6 +2085,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "DataGridExtensions": {
+            "target": "Package",
+            "version": "[2.6.0, )"
+          },
           "Fluent.Ribbon": {
             "target": "Package",
             "version": "[11.0.1, )"

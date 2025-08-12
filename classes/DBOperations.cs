@@ -459,80 +459,47 @@ namespace ExtremeTaleplerV2.classes
         }
         public static void AddOrUpdateDepartment(int id, string val)
         {
-            try
+            if (val == string.Empty)
             {
-                using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
+                MessageBox.Show("Departman adı boş geçilemez!","Uyarı",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+            else
+            {
+                try
                 {
-                    conn.Open();
-                    string sql;
-                    if (id == 0)
+                    using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
                     {
-                        sql = $"insert into Departments (DepartmanAdi) values (@DepartmanAdi)";
-                        using (SqlCommand cmd = new SqlCommand(sql, conn))
+                        conn.Open();
+                        string sql;
+                        if (id == 0)
                         {
-                            cmd.Parameters.AddWithValue("@DepartmanAdi", val);
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Kayıt işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            sql = $"insert into Departments (DepartmanAdi) values (@DepartmanAdi)";
+                            using (SqlCommand cmd = new SqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@DepartmanAdi", val);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Kayıt işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            }
                         }
-                    }
-                    else
-                    {
-                        sql = $"update Departments set DepartmanAdi = @DepartmanAdi where id = @id";
-                        using (SqlCommand cmd = new SqlCommand(sql, conn))
+                        else
                         {
-                            cmd.Parameters.AddWithValue("@DepartmanAdi", val);
-                            cmd.Parameters.AddWithValue("@id", id);
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Kayıt güncelleme işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            sql = $"update Departments set DepartmanAdi = @DepartmanAdi where id = @id";
+                            using (SqlCommand cmd = new SqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@DepartmanAdi", val);
+                                cmd.Parameters.AddWithValue("@id", id);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Kayıt güncelleme işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            }
                         }
-                    }
 
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata : " + ex.Message);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata : " + ex.Message);
-            }
-            //try
-            //{
-            //    using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
-            //    {
-            //        conn.Open();
-            //        string sql;
-            //        if (type == "Kullanici")
-            //        {
-            //            if (id == 0)
-            //            {
-            //                sql = $"insert into User (adSoyad) values (@adSoyad)";
-            //                using (SqlCommand cmd = new SqlCommand(sql, conn))
-            //                {
-            //                    cmd.Parameters.AddWithValue("@adSoyad", val); 
-            //                    if (id != 0)
-            //                    {
-            //                        cmd.Parameters.AddWithValue("@id", id);
-            //                    }
-            //                    cmd.ExecuteNonQuery();
-            //                    return true;
-
-            //                }
-            //            }
-            //        }
-            //        else if (type == "Departman")
-            //        {
-            //            if (id == 0)
-            //            {
-
-            //            }
-            //        }
-            //    }
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Kayıt sırasında hata oluştu: " + ex.Message, "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
-            //    return false;
-            //}
-
         }
     }
 }

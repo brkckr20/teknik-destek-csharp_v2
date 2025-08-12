@@ -86,8 +86,7 @@ namespace ExtremeTaleplerV2.UControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ExtremeTaleplerV2;V1.0.0.0;component/ucontrols/uc_kullanicivedepartmankarti.xaml" +
-                    "", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ExtremeTaleplerV2;component/ucontrols/uc_kullanicivedepartmankarti.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UControls\UC_KullaniciVeDepartmanKarti.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

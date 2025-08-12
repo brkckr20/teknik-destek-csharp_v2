@@ -4,9 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExtremeTaleplerV2.NewWins.Lists"
+        xmlns:dgx="clr-namespace:DataGridExtensions;assembly=DataGridExtensions"
         mc:Ignorable="d"
-        Title="Departman Listesi" Height="450" Width="400">
+        Title="Departman Listesi" Height="300" Width="250" WindowStartupLocation="CenterScreen" Icon="/NewWins/Lists/Request Service.png" ResizeMode="NoResize">
     <Grid>
-        
+        <DataGrid x:Name="dgDepartman"
+                  AutoGenerateColumns="True"
+                  dgx:DataGridFilter.IsAutoFilterEnabled="True"
+                  IsReadOnly="False"
+                  >
+        </DataGrid>
     </Grid>
 </Window>
