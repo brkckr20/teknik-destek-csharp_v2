@@ -6,12 +6,11 @@
         xmlns:local="clr-namespace:ExtremeTaleplerV2.NewWins.Lists"
         xmlns:dgx="clr-namespace:DataGridExtensions;assembly=DataGridExtensions"
         mc:Ignorable="d"
-        Title="Departman Listesi" Height="300" Width="250" WindowStartupLocation="CenterScreen" Icon="/NewWins/Lists/Request Service.png" ResizeMode="NoResize">
+        Title="Departman Listesi" FontFamily="Bahnschrift" Height="300" Width="350" WindowStartupLocation="CenterScreen" Icon="/NewWins/Lists/Request Service.png" ResizeMode="NoResize">
     <Grid>
         <DataGrid x:Name="dgDepartman"
-                  AutoGenerateColumns="True"
                   dgx:DataGridFilter.IsAutoFilterEnabled="True"
-                  IsReadOnly="False"
+                  IsReadOnly="True" MouseDoubleClick="dgDepartman_MouseDoubleClick"
                   >
         </DataGrid>
     </Grid>

@@ -323,14 +323,14 @@ namespace ExtremeTaleplerV2.classes
                 return false;
             }
         }
-        public static bool Sil(int id)
+        public static bool Sil(int id,string tablename = "TechnicalSupport",string wheretype = "Id")
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
                 {
                     conn.Open();
-                    string sql = @"DELETE FROM TechnicalSupport WHERE Id = @Id";
+                    string sql = $@"DELETE FROM {tablename} WHERE {wheretype} = @Id";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -499,6 +499,29 @@ namespace ExtremeTaleplerV2.classes
                 {
                     MessageBox.Show("Hata : " + ex.Message);
                 }
+            }
+        }
+        public static void DepartmanlariGrideYansit(DataGrid dg)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DBBaglanti.baglanti_adresi))
+                {
+                    connection.Open();
+                    string sql = "select id,DepartmanAdi from Departments";
+                    SqlDataAdapter adapter = new SqlDataAdapter(sql,connection);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dg.ItemsSource = dt.DefaultView;
+                    if (dg.Columns.Count > 0)
+                    {
+                        dg.Columns[0].Visibility = Visibility.Hidden;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
             }
         }
     }

@@ -6,6 +6,7 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\ControlzEx.dll
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\DataGridExtensions.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\Fluent.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
@@ -62,6 +63,7 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.csproj.AssemblyReference.cache
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainScreen.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_KullaniciVeDepartmanKarti.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.g.cs
@@ -79,6 +81,7 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\App.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainScreen.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_KullaniciVeDepartmanKarti.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.baml
@@ -102,6 +105,3 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.pdb
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.genruntimeconfig.cache
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ref\ExtremeTaleplerV2.dll
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.g.cs
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.baml
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\bin\Debug\net8.0-windows\DataGridExtensions.dll

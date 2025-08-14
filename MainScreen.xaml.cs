@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Ribbon;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ExtremeTaleplerV2
 {
@@ -89,8 +79,14 @@ namespace ExtremeTaleplerV2
 
         private void btnDepartmanKarti_Click(object sender, RoutedEventArgs e)
         {
-            UControls.UC_KullaniciVeDepartmanKarti uc = new UControls.UC_KullaniciVeDepartmanKarti();
+            UControls.UC_KullaniciVeDepartmanKarti uc = new UControls.UC_KullaniciVeDepartmanKarti(Utils.Enums.CardType.Departman);
             AddOrSelectTab("Departman Kartı", uc);
+        }
+
+        private void btnKullaniciKarti_Click(object sender, RoutedEventArgs e)
+        {
+            UControls.UC_KullaniciVeDepartmanKarti uc = new UControls.UC_KullaniciVeDepartmanKarti(Utils.Enums.CardType.Kullanici);
+            AddOrSelectTab("Kullanıcı Kartı", uc);
         }
     }
 }

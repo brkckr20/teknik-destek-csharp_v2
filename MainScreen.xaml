@@ -13,7 +13,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ribbon:Ribbon Grid.Row="0" Margin="0,-24,0,0" x:Name="mainRibbon" ShowQuickAccessToolBarOnTop="False" VerticalAlignment="Top">
+        <ribbon:Ribbon Grid.Row="0" Margin="0,-24,0,0" x:Name="mainRibbon" ShowQuickAccessToolBarOnTop="False" VerticalAlignment="Top" FontFamily="Bahnschrift">
             <RibbonTab Header="Genel">
                 <RibbonGroup Header="İşlemler">
                     <!--<RibbonButton x:Name="btnYeniTalepEkle" Label="Yeni Talep Ekle" LargeImageSource="/Plus.png"/>-->
@@ -22,7 +22,7 @@
             </RibbonTab>
             <RibbonTab Header="Kartlar">
                 <RibbonGroup Header="Kart İşlemleri">
-                    <RibbonButton Label="Kullanıcı Kartı" LargeImageSource="/Find User Male_1.png"/>
+                    <RibbonButton x:Name="btnKullaniciKarti" Click="btnKullaniciKarti_Click" Label="Kullanıcı Kartı" LargeImageSource="/Find User Male_1.png"/>
                     <RibbonButton x:Name="btnDepartmanKarti" Click="btnDepartmanKarti_Click" Label="Departman Kartı" LargeImageSource="/Toolbox.png" />
                 </RibbonGroup>
             </RibbonTab>

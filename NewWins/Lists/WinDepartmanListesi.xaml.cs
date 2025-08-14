@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ExtremeTaleplerV2.classes;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static ExtremeTaleplerV2.NewWins.Lists.WinDepartmanListesi;
 
 namespace ExtremeTaleplerV2.NewWins.Lists
 {
@@ -22,17 +25,23 @@ namespace ExtremeTaleplerV2.NewWins.Lists
         public WinDepartmanListesi()
         {
             InitializeComponent();
-            dgDepartman.ItemsSource = new List<Departman>
-        {
-            new Departman { Id = 1, Ad = "Muhasebe" },
-            new Departman { Id = 2, Ad = "İK" },
-            new Departman { Id = 3, Ad = "Satın Alma" }
-        };
+            DBOperations.DepartmanlariGrideYansit(dgDepartman);
         }
-        public class Departman
+        public int _id;
+        public string _ad;
+
+        private void dgDepartman_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            public int Id { get; set; }
-            public string Ad { get; set; }
+            if (dgDepartman.SelectedItem != null)
+            {
+                var row = dgDepartman.SelectedItem as DataRowView;
+                if (row != null)
+                {
+                    _id = Convert.ToInt32(row["id"]);
+                    _ad = row["DepartmanAdi"].ToString();
+                    Close();
+                }
+            }
         }
     }
 }
