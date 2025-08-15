@@ -524,5 +524,70 @@ namespace ExtremeTaleplerV2.classes
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
+        public static void AddOrUpdateUser(int id, string val,string user)
+        {
+            if (user == string.Empty || val == string.Empty)
+            {
+                MessageBox.Show("Kullanıcı ve departman adı boş geçilemez!", "Uyarı", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                try
+                {
+                    using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
+                    {
+                        conn.Open();
+                        string sql;
+                        if (id == 0)
+                        {
+                            sql = $"insert into Users (adSoyad,departman) values (@Kullanici,@DepartmanAdi)";
+                            using (SqlCommand cmd = new SqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@Kullanici", user);
+                                cmd.Parameters.AddWithValue("@DepartmanAdi", val);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Kayıt işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            }
+                        }
+                        else
+                        {
+                            sql = $"update Users set departman = @departman,adSoyad = @Kullanici where id = @id";
+                            using (SqlCommand cmd = new SqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@departman", val);
+                                cmd.Parameters.AddWithValue("@Kullanici", user);
+                                cmd.Parameters.AddWithValue("@id", id);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Kayıt güncelleme işlemi başarılı!", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                            }
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata : " + ex.Message);
+                }
+            }
+        }
+        public static void KullanicilariGrideYansit(DataGrid dg)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DBBaglanti.baglanti_adresi))
+                {
+                    connection.Open();
+                    string sql = "select id,adSoyad,departman from Users";
+                    SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dg.ItemsSource = dt.DefaultView;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
     }
 }

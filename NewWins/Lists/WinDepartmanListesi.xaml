@@ -11,6 +11,7 @@
         <DataGrid x:Name="dgDepartman"
                   dgx:DataGridFilter.IsAutoFilterEnabled="True"
                   IsReadOnly="True" MouseDoubleClick="dgDepartman_MouseDoubleClick"
+                  HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" RowHeight="24"
                   >
         </DataGrid>
     </Grid>

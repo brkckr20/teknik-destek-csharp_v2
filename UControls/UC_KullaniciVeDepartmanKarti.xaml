@@ -27,18 +27,18 @@
                         <TextBlock Text="Liste" HorizontalAlignment="Center" Margin="0,4,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                <!--<Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image  Width="24" Height="24" Source="/UControls/Back.png"  />
                         <TextBlock Text="Geri" HorizontalAlignment="Center" Margin="0,4,0,0"/>
                     </StackPanel>
-                </Button>
-                <Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
+                </Button>-->
+                <!--<Button Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image  Width="24" Height="24" Source="/UControls/Forward.png"  />
                         <TextBlock Text="İleri" HorizontalAlignment="Center" Margin="0,4,0,0"/>
                     </StackPanel>
-                </Button>
+                </Button>-->
                 <Button x:Name="btnSil1" Click="btnSil1_Click" Width="50" Height="55" Background="Transparent" BorderThickness="0.2" BorderBrush="Black" Margin="0,0,2,0" >
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Image  Width="24" Height="24" Source="/UControls/Trash.png"  />
@@ -55,7 +55,7 @@
             <DockPanel x:Name="pnlDepartman" Width="325" HorizontalAlignment="Left">
                 <Label Content="Departman Adı : " Width="100"/>
                 <TextBox Width="200" VerticalContentAlignment="Center" x:Name="txtAdi1"/>
-                <Button Content="🔎" Width="25" BorderBrush="Gray" BorderThickness="0,0.5,0.5,0.5" Background="Transparent" Panel.ZIndex="100" />
+                <Button x:Name="openDepartments" Click="openDepartments_Click" Content="🔎" Width="25" BorderBrush="Gray" BorderThickness="0,0.5,0.5,0.5" Background="Transparent" Panel.ZIndex="100" />
             </DockPanel>
         </StackPanel>
     </StackPanel>

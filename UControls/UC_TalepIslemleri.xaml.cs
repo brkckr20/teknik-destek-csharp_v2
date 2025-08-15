@@ -95,5 +95,18 @@ namespace ExtremeTaleplerV2.UControls
             NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(false, row_id);
             win.ShowDialog();
         }
+
+        private void talepSil1_Click(object sender, RoutedEventArgs e)
+        {
+            int row_id = helpers.GetRowId(grdIslemler);
+            DBOperations.Sil(row_id);
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
+        }
+
+        private void detayGoruntule_Click(object sender, RoutedEventArgs e)
+        {
+            NewWins.WinDetayGoruntule win = new NewWins.WinDetayGoruntule();
+            win.ShowDialog();
+        }
     }
 }

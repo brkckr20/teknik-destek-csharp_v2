@@ -24,6 +24,7 @@ namespace ExtremeTaleplerV2.NewWins
                 brdrDurumu.Visibility = Visibility.Collapsed;
                 this.MaxHeight = 355;
                 this.Height = 355;
+                dpTarih.SelectedDate = DateTime.Now;
             }
             else
             {
@@ -63,6 +64,17 @@ namespace ExtremeTaleplerV2.NewWins
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void openUserList_Click(object sender, RoutedEventArgs e)
+        {
+            Lists.WinKullaniciListesi win = new Lists.WinKullaniciListesi();
+            win.ShowDialog();
+            if (win._id != 0)
+            {
+                txtKullanici1.Text = win._ad;
+                txtDepartman1.Text = win._departman;
             }
         }
     }

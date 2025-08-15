@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\App.xaml
-141552646508
+16-2132791140
 
-24-992156219
+26770353137
 229-1673279061
-MainScreen.xaml;MainWindow.xaml;NewWins\Lists\WinDepartmanListesi.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_KullaniciVeDepartmanKarti.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
+MainScreen.xaml;MainWindow.xaml;NewWins\Lists\WinDepartmanListesi.xaml;NewWins\Lists\WinKullaniciListesi.xaml;NewWins\WinDetayGoruntule.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_KullaniciVeDepartmanKarti.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
 
-True
+False
 

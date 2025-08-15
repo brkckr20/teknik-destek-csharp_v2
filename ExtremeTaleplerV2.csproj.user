@@ -13,6 +13,12 @@
     <Compile Update="NewWins\Lists\WinDepartmanListesi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="NewWins\Lists\WinKullaniciListesi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewWins\WinDetayGoruntule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="NewWins\WinTalepEkleGuncelle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +61,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="NewWins\Lists\WinDepartmanListesi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewWins\Lists\WinKullaniciListesi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewWins\WinDetayGoruntule.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="NewWins\WinTalepEkleGuncelle.xaml">

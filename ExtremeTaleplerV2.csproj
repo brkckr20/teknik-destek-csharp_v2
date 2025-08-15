@@ -12,6 +12,7 @@
     <None Remove="Bookmark.png" />
     <None Remove="Find User Male_1.png" />
     <None Remove="NewWins\Lists\Request Service.png" />
+    <None Remove="NewWins\Request Service.png" />
     <None Remove="Plus.png" />
     <None Remove="Save.png" />
     <None Remove="Toolbox.png" />
@@ -36,6 +37,7 @@
     <Resource Include="Bookmark.png" />
     <Resource Include="Find User Male_1.png" />
     <Resource Include="NewWins\Lists\Request Service.png" />
+    <Resource Include="NewWins\Request Service.png" />
     <Resource Include="Plus.png" />
     <Resource Include="Save.png" />
     <Resource Include="Toolbox.png" />

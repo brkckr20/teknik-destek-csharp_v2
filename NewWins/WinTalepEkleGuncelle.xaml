@@ -17,7 +17,7 @@
             <DockPanel>
                 <Label VerticalContentAlignment="Center" Width="100" Content="Kullanıcı : "/>
                 <TextBox x:Name="txtKullanici1" VerticalContentAlignment="Center" Width="180" Canvas.Left="100" HorizontalAlignment="Left" Height="24" VerticalAlignment="Center"/>
-                <Button Background="Transparent" BorderThickness="0,.5,.5,.5" VerticalContentAlignment="Center" Height="24" Content="🔎" Width="30" HorizontalAlignment="Left" Canvas.Left="279" VerticalAlignment="Center"></Button>
+                <Button x:Name="openUserList" Click="openUserList_Click" Background="Transparent" BorderThickness="0,.5,.5,.5" VerticalContentAlignment="Center" Height="24" Content="🔎" Width="30" HorizontalAlignment="Left" Canvas.Left="279" VerticalAlignment="Center"></Button>
             </DockPanel>
         </Border>
         <Border Height="25" Margin="0,0,0,5">

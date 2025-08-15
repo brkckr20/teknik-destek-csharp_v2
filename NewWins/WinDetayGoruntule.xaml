@@ -1,0 +1,33 @@
+﻿<Window x:Class="ExtremeTaleplerV2.NewWins.WinDetayGoruntule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtremeTaleplerV2.NewWins"
+        mc:Ignorable="d"
+        Title="Detay Görüntüle" Height="450" Width="800" FontFamily="Bahnschrift" Icon="/NewWins/Request Service.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <DockPanel HorizontalAlignment="Left">
+                <Label Content="Tarih :" Width="100"></Label>
+                <Label Content="15.08.2025"></Label>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Left">
+                <Label Content="Kullanıcı :" Width="100"></Label>
+                <Label Content="Burak Çakır"></Label>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Left">
+                <Label Content="Departman :" Width="100"></Label>
+                <Label Content="Bilgi İşlem"></Label>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Left">
+                <Label Content="Açıklama :" Width="100"></Label>
+                <Label BorderBrush="LightGray" BorderThickness="0.5" Content="Bilgi İşlem"></Label>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
