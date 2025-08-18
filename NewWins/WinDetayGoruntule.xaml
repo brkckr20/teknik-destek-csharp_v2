@@ -18,7 +18,7 @@
             </DockPanel>
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Kullanıcı :" Width="100"></Label>
-                <Label Content="Burak Çakır"></Label>
+                <Label Content="Burak Çakır 1"></Label>
             </DockPanel>
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Departman :" Width="100"></Label>

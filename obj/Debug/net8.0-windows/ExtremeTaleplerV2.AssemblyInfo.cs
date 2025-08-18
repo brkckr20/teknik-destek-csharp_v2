@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtremeTaleplerV2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec74b5211ddbd741cab4dba59a69d450fda1a5d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a7c5033b542e7484391ed0cfd0d1ab04b4f21f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtremeTaleplerV2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtremeTaleplerV2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
