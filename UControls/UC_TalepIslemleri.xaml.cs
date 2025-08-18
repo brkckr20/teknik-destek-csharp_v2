@@ -105,7 +105,8 @@ namespace ExtremeTaleplerV2.UControls
 
         private void detayGoruntule_Click(object sender, RoutedEventArgs e)
         {
-            NewWins.WinDetayGoruntule win = new NewWins.WinDetayGoruntule();
+            int row_id = helpers.GetRowId(grdIslemler);
+            NewWins.WinDetayGoruntule win = new NewWins.WinDetayGoruntule(row_id);
             win.ShowDialog();
         }
     }

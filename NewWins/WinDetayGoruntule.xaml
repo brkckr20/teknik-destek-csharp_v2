@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExtremeTaleplerV2.NewWins"
+        xmlns:dgx="clr-namespace:DataGridExtensions;assembly=DataGridExtensions"
         mc:Ignorable="d"
-        Title="Detay Görüntüle" Height="450" Width="800" FontFamily="Bahnschrift" Icon="/NewWins/Request Service.png">
+        Title="Detay Görüntüle" WindowStartupLocation="CenterScreen" Height="450" Width="800" FontFamily="Bahnschrift" Icon="/NewWins/Request Service.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -14,20 +15,37 @@
         <StackPanel Grid.Row="0">
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Tarih :" Width="100"></Label>
-                <Label Content="15.08.2025"></Label>
+                <Label x:Name="lbTarih1" Content="15.08.2025"></Label>
             </DockPanel>
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Kullanıcı :" Width="100"></Label>
-                <Label Content="Burak Çakır 1"></Label>
+                <Label x:Name="lbKullanici" Content="Burak Çakır 1"></Label>
             </DockPanel>
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Departman :" Width="100"></Label>
-                <Label Content="Bilgi İşlem"></Label>
+                <Label x:Name="lbDepartman" Content="Bilgi İşlem"></Label>
             </DockPanel>
             <DockPanel HorizontalAlignment="Left">
                 <Label Content="Açıklama :" Width="100"></Label>
-                <Label BorderBrush="LightGray" BorderThickness="0.5" Content="Bilgi İşlem"></Label>
+                <Label BorderBrush="Gray" BorderThickness="0.5">
+                    <TextBlock x:Name="tbAciklama" TextWrapping="WrapWithOverflow" Text=""></TextBlock>
+                </Label>
             </DockPanel>
         </StackPanel>
+        <Border Grid.Row="1" Margin="0,4,0,0">
+            <DataGrid x:Name="dgDetayListesi"
+          dgx:DataGridFilter.IsAutoFilterEnabled="True"
+          IsReadOnly="True"
+          HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" RowHeight="24"
+          >
+                <DataGrid.ContextMenu>
+                    <ContextMenu FontFamily="Bahnschrift">
+                        <MenuItem Header="Kaydı Sil" Click="cmKaydiSil_Click" x:Name="cmKaydiSil" CommandParameter="{Binding Path=PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"></MenuItem>
+                        <MenuItem Header="Kaydı Güncelle" x:Name="cmKaydiGuncelle"></MenuItem>
+                        <MenuItem Header="Yenile" x:Name="cmYenile"></MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+        </Border>
     </Grid>
 </Window>
