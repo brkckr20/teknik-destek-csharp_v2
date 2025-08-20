@@ -1,17 +1,5 @@
 ﻿using ExtremeTaleplerV2.classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ExtremeTaleplerV2.NewWins
 {
@@ -38,7 +26,21 @@ namespace ExtremeTaleplerV2.NewWins
         private void cmKaydiSil_Click(object sender, RoutedEventArgs e)
         {
             int row_id = helpers.GetRowId(dgDetayListesi);
-            //DBOperations.GuncellemeSil(row_id);
+            DBOperations.GuncellemeSil(row_id);
+            DBOperations.DetaylariGetir(dgDetayListesi, id);
+        }
+
+        private void cmKaydiGuncelle_Click(object sender, RoutedEventArgs e)
+        {
+            int row_id = helpers.GetRowId(dgDetayListesi);
+            WinDetayGuncelle win = new WinDetayGuncelle(row_id);
+            win.ShowDialog();
+            DBOperations.DetaylariGetir(dgDetayListesi, id);
+        }
+
+        private void cmYenile_Click(object sender, RoutedEventArgs e)
+        {
+            DBOperations.DetaylariGetir(dgDetayListesi, id);
         }
     }
 }

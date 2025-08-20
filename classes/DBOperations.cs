@@ -163,7 +163,6 @@ namespace ExtremeTaleplerV2.classes
                 return false;
             }
         }
-
         public static bool Ekle(string departman, string kullanici, string baslik, string aciklama, string durum, DateTime tarih, int id)
         {
             try
@@ -241,6 +240,37 @@ namespace ExtremeTaleplerV2.classes
                 kullanici.SelectedValuePath = "DepartmanAdi";
             }
         }
+        public static DataRow NotGetir(int id)
+        {
+            DataRow dataRow = null;
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM Notes WHERE Id = @Id";
+                    using (SqlCommand command = new SqlCommand(query, conn))
+                    {
+                        command.Parameters.AddWithValue("@Id", id);
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            DataTable dt = new DataTable();
+                            da.Fill(dt);
+                            if (dt.Rows.Count > 0)
+                            {
+                                dataRow = dt.Rows[0];
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
+                dataRow = null;
+            }
+            return dataRow;
+        }
         public static DataRow TalepGetir(int id)
         {
             DataRow resultRow = null; // Başlangıçta null olarak ayarla, eğer kayıt bulunamazsa veya hata olursa null dönecek.
@@ -281,7 +311,36 @@ namespace ExtremeTaleplerV2.classes
             }
             return resultRow; // Elde edilen DataRow'u veya null'u döndür.
         }
-
+        public static bool NotGuncelle(string gorusmenotu, string not1, string not2, string not3, DatePicker tarih, int id)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DBBaglanti.baglanti_adresi))
+                {
+                    conn.Open();
+                    string uSql = "Update Notes set GorusmeNotu = @gorusmenotu, Not1 = @Not1,Not2 = @Not2,Not3 = @Not3,GorusmeTarihi = @tarih WHERE Id = @id";
+                    using (SqlCommand cmd = new SqlCommand(uSql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@gorusmenotu",gorusmenotu);
+                        cmd.Parameters.AddWithValue("@Not1", not1);
+                        cmd.Parameters.AddWithValue("@Not2", not2);
+                        cmd.Parameters.AddWithValue("@Not3", not3);
+                        cmd.Parameters.AddWithValue("@tarih", tarih.SelectedDate);
+                        if (id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", id);
+                        }
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Güncelleme sırasında hata oluştu: " + ex.Message, "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
         public static bool Guncelle(string departman, string kullanici, string baslik, string aciklama, string durum, DatePicker tarih, int id)
         {
             try
@@ -323,7 +382,7 @@ namespace ExtremeTaleplerV2.classes
                 return false;
             }
         }
-        public static bool Sil(int id,string tablename = "TechnicalSupport",string wheretype = "Id")
+        public static bool Sil(int id, string tablename = "TechnicalSupport", string wheretype = "Id")
         {
             try
             {
@@ -461,7 +520,7 @@ namespace ExtremeTaleplerV2.classes
         {
             if (val == string.Empty)
             {
-                MessageBox.Show("Departman adı boş geçilemez!","Uyarı",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Departman adı boş geçilemez!", "Uyarı", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
@@ -509,7 +568,7 @@ namespace ExtremeTaleplerV2.classes
                 {
                     connection.Open();
                     string sql = "select id,DepartmanAdi from Departments";
-                    SqlDataAdapter adapter = new SqlDataAdapter(sql,connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
                     dg.ItemsSource = dt.DefaultView;
@@ -524,7 +583,7 @@ namespace ExtremeTaleplerV2.classes
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
-        public static void AddOrUpdateUser(int id, string val,string user)
+        public static void AddOrUpdateUser(int id, string val, string user)
         {
             if (user == string.Empty || val == string.Empty)
             {

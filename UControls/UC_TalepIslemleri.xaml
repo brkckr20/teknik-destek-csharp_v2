@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ExtremeTaleplerV2.UControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" PreviewKeyDown="UserControl_PreviewKeyDown">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -44,7 +44,10 @@
                         <Separator />
                         <MenuItem Header="Detay İşlemleri">
                             <MenuItem x:Name="detayGoruntule" Click="detayGoruntule_Click" Header="Detay Görüntüle"></MenuItem>
+                            <MenuItem x:Name="detayEkle" Click="detayEkle_Click" Header="Detay Ekle"></MenuItem>
                         </MenuItem>
+                        <Separator />
+                        <MenuItem x:Name="menuListeyiYenile" Header="Yenile" Click="menuListeyiYenile_Click" InputGestureText="F5"/>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

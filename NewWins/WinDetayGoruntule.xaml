@@ -41,8 +41,8 @@
                 <DataGrid.ContextMenu>
                     <ContextMenu FontFamily="Bahnschrift">
                         <MenuItem Header="Kaydı Sil" Click="cmKaydiSil_Click" x:Name="cmKaydiSil" CommandParameter="{Binding Path=PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"></MenuItem>
-                        <MenuItem Header="Kaydı Güncelle" x:Name="cmKaydiGuncelle"></MenuItem>
-                        <MenuItem Header="Yenile" x:Name="cmYenile"></MenuItem>
+                        <MenuItem Header="Kaydı Güncelle" x:Name="cmKaydiGuncelle" Click="cmKaydiGuncelle_Click"></MenuItem>
+                        <MenuItem Header="Yenile" x:Name="cmYenile" Click="cmYenile_Click"></MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
             </DataGrid>
