@@ -14,6 +14,7 @@
     <None Remove="NewWins\Lists\Request Service.png" />
     <None Remove="NewWins\Request Service.png" />
     <None Remove="Plus.png" />
+    <None Remove="Request Service.png" />
     <None Remove="Save.png" />
     <None Remove="Toolbox.png" />
     <None Remove="UControls\Back.png" />
@@ -39,6 +40,7 @@
     <Resource Include="NewWins\Lists\Request Service.png" />
     <Resource Include="NewWins\Request Service.png" />
     <Resource Include="Plus.png" />
+    <Resource Include="Request Service.png" />
     <Resource Include="Save.png" />
     <Resource Include="Toolbox.png" />
     <Resource Include="UControls\Back.png" />

@@ -29,8 +29,8 @@ namespace ExtremeTaleplerV2.NewWins
             else
             {
                 Title = "Talep Güncelle [" + _recordId + "]";
-                btnYeniKayit1.Content = "Güncelle";
-                btnYeniKayit1.Width += 5;
+                btnYeniKayit1.Content = "Güncelle 💢";
+                btnYeniKayit1.Width += 25;
                 GetRequest();
             }
         }
@@ -75,6 +75,18 @@ namespace ExtremeTaleplerV2.NewWins
             {
                 txtKullanici1.Text = win._ad;
                 txtDepartman1.Text = win._departman;
+            }
+        }
+
+        private void btnYeniKayit1_Click(object sender, RoutedEventArgs e)
+        {
+            if (_isNewRecord)
+            {
+                DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text,"0",dpTarih.SelectedDate.Value,0);
+            }
+            else
+            {
+                //DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text);
             }
         }
     }

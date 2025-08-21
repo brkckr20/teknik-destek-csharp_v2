@@ -6,7 +6,7 @@
         xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
         xmlns:local="clr-namespace:ExtremeTaleplerV2"
         mc:Ignorable="d"
-        Title="Extreme Talepleri" Height="450" Width="800" WindowState="Maximized">
+        Title="Extreme Talepleri" Height="450" Width="800" WindowState="Maximized" Icon="/Request Service.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

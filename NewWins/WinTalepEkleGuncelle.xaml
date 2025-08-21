@@ -50,7 +50,7 @@
             </DockPanel>
         </Border>
         <Border Margin="0,0,0,5">
-            <Button Background="Transparent" HorizontalAlignment="Right" x:Name="btnYeniKayit1" Content="Kaydet" Height="24" Width="50"/>
+            <Button Background="Transparent" HorizontalAlignment="Right" x:Name="btnYeniKayit1" Click="btnYeniKayit1_Click" Content="Kaydet" Height="24" Width="50"/>
         </Border>
     </StackPanel>
 </Window>
