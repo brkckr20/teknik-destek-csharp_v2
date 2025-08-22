@@ -65,7 +65,9 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinKullaniciListesi.g.cs
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayEkle.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGoruntule.g.cs
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGuncelle.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_KullaniciVeDepartmanKarti.g.cs
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.g.cs
@@ -85,7 +87,9 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinDepartmanListesi.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\Lists\WinKullaniciListesi.baml
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayEkle.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGoruntule.baml
+C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGuncelle.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinTalepEkleGuncelle.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_KullaniciVeDepartmanKarti.baml
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\UControls\UC_TalepIslemleri.baml
@@ -109,7 +113,3 @@ C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTale
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.pdb
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ExtremeTaleplerV2.genruntimeconfig.cache
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\ref\ExtremeTaleplerV2.dll
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayEkle.g.cs
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayEkle.baml
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGuncelle.g.cs
-C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\obj\Debug\net8.0-windows\NewWins\WinDetayGuncelle.baml

@@ -10,6 +10,7 @@ namespace ExtremeTaleplerV2.NewWins
     {
         bool _isNewRecord;
         int _recordId;
+        string _durumu;
         public WinTalepEkleGuncelle(bool isNewRecord, int recordId)
         {
             InitializeComponent();
@@ -52,15 +53,19 @@ namespace ExtremeTaleplerV2.NewWins
             {
                 case 0:
                     iptal1.IsChecked = true;
+                    _durumu = "0";
                     break;
                 case 1:
                     bekle1.IsChecked = true;
+                    _durumu = "1";
                     break;
                 case 2:
                     tamam1.IsChecked = true;
+                    _durumu = "2";
                     break;
                 case 3:
                     incele1.IsChecked = true;
+                    _durumu = "3";
                     break;
                 default:
                     break;
@@ -83,10 +88,14 @@ namespace ExtremeTaleplerV2.NewWins
             if (_isNewRecord)
             {
                 DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text,"0",dpTarih.SelectedDate.Value,0);
+                MessageBox.Show("Yeni kayıt işlemi başarıyla gerçekleştirildi.", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
+                Close();
             }
             else
             {
-                //DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text);
+                DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text, _durumu, dpTarih.SelectedDate.Value, _recordId);
+                MessageBox.Show("Güncelleme işlemi başarıyla gerçekleştirildi.","Bilgilendirme",MessageBoxButton.OK,MessageBoxImage.Information);
+                Close();
             }
         }
     }

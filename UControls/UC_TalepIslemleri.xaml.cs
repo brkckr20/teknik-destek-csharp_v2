@@ -88,6 +88,7 @@ namespace ExtremeTaleplerV2.UControls
         {
             NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(true,0);
             win.ShowDialog();
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
         }
 
         private void talepGuncelle1_Click(object sender, RoutedEventArgs e)
@@ -95,6 +96,7 @@ namespace ExtremeTaleplerV2.UControls
             int row_id = helpers.GetRowId(grdIslemler);
             NewWins.WinTalepEkleGuncelle win = new NewWins.WinTalepEkleGuncelle(false, row_id);
             win.ShowDialog();
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
         }
 
         private void talepSil1_Click(object sender, RoutedEventArgs e)
@@ -109,6 +111,7 @@ namespace ExtremeTaleplerV2.UControls
             int row_id = helpers.GetRowId(grdIslemler);
             NewWins.WinDetayGoruntule win = new NewWins.WinDetayGoruntule(row_id);
             win.ShowDialog();
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
         }
 
         private void detayEkle_Click(object sender, RoutedEventArgs e)
@@ -116,6 +119,7 @@ namespace ExtremeTaleplerV2.UControls
             int row_id = helpers.GetRowId(grdIslemler);
             NewWins.WinDetayEkle win = new NewWins.WinDetayEkle(row_id);
             win.ShowDialog();
+            DBOperations.SetGrid(grdIslemler, filtreDurumu);
         }
 
         private void menuListeyiYenile_Click(object sender, RoutedEventArgs e)
