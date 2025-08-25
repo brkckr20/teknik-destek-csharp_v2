@@ -48,6 +48,10 @@
                         </MenuItem>
                         <Separator />
                         <MenuItem x:Name="menuListeyiYenile" Header="Yenile" Click="menuListeyiYenile_Click" InputGestureText="F5"/>
+                        <Separator />
+                        <MenuItem Header="Dışarı Aktar">
+                            <MenuItem x:Name="excelAktar" Click="excelAktar_Click" Header="Excel olarak aktar"/>
+                        </MenuItem>
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.Columns>

@@ -1,8 +1,10 @@
-﻿using ExtremeTaleplerV2.classes;
+﻿using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using ExtremeTaleplerV2.classes;
 using System.Data;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+
 
 namespace ExtremeTaleplerV2.UControls
 {
@@ -134,6 +136,33 @@ namespace ExtremeTaleplerV2.UControls
                 e.Handled = true;
                 DBOperations.SetGrid(grdIslemler, filtreDurumu);
             }
+        }
+
+        private void excelAktar_Click(object sender, RoutedEventArgs e)
+        {
+            DataTable dt = new DataTable();
+            foreach (DataGridColumn column in grdIslemler.Columns)
+            {
+                string header = column.Header?.ToString() ?? string.Empty;
+                dt.Columns.Add(header);
+            }
+            foreach (var item in grdIslemler.Items)
+            {
+                if (item == null) continue;
+                DataRow row = dt.NewRow();
+
+                for (int i = 0; i < grdIslemler.Columns.Count; i++)
+                {
+                    var cellContent = grdIslemler.Columns[i].GetCellContent(item) as TextBlock;
+                    if (cellContent != null)
+                        row[i] = cellContent.Text;
+                    else
+                        row[i] = DBNull.Value;
+                }
+
+                dt.Rows.Add(row);
+            }
+            helpers.ExcelAktar(dt);
         }
     }
 }

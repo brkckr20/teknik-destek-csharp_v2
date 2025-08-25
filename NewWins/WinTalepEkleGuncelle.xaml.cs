@@ -53,19 +53,15 @@ namespace ExtremeTaleplerV2.NewWins
             {
                 case 0:
                     iptal1.IsChecked = true;
-                    _durumu = "0";
                     break;
                 case 1:
                     bekle1.IsChecked = true;
-                    _durumu = "1";
                     break;
                 case 2:
                     tamam1.IsChecked = true;
-                    _durumu = "2";
                     break;
                 case 3:
                     incele1.IsChecked = true;
-                    _durumu = "3";
                     break;
                 default:
                     break;
@@ -87,16 +83,38 @@ namespace ExtremeTaleplerV2.NewWins
         {
             if (_isNewRecord)
             {
-                DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text,"0",dpTarih.SelectedDate.Value,0);
+                DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text, "1", dpTarih.SelectedDate.Value, 0);
                 MessageBox.Show("Yeni kayıt işlemi başarıyla gerçekleştirildi.", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
                 Close();
+                //MessageBox.Show("Yeni kayıt ekleme işlemi");
             }
             else
             {
                 DBOperations.Ekle(txtDepartman1.Text, txtKullanici1.Text, txtBaslik1.Text, txtAciklama1.Text, _durumu, dpTarih.SelectedDate.Value, _recordId);
-                MessageBox.Show("Güncelleme işlemi başarıyla gerçekleştirildi.","Bilgilendirme",MessageBoxButton.OK,MessageBoxImage.Information);
+                MessageBox.Show("Güncelleme işlemi başarıyla gerçekleştirildi.", "Bilgilendirme", MessageBoxButton.OK, MessageBoxImage.Information);
                 Close();
+                //MessageBox.Show("Kayıt güncelleme ekleme işlemi. Durumu : " + _durumu);
             }
+        }
+
+        private void tamam1_Checked(object sender, RoutedEventArgs e)
+        {
+            _durumu = "2";
+        }
+
+        private void bekle1_Checked(object sender, RoutedEventArgs e)
+        {
+            _durumu = "1";
+        }
+
+        private void incele1_Checked(object sender, RoutedEventArgs e)
+        {
+            _durumu = "3";
+        }
+
+        private void iptal1_Checked(object sender, RoutedEventArgs e)
+        {
+            _durumu = "0";
         }
     }
 }

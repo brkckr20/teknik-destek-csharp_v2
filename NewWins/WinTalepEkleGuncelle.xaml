@@ -42,10 +42,10 @@
             <DockPanel>
                 <Label HorizontalAlignment="Left" Width="100" Content="Durumu : "/>
                 <StackPanel>
-                    <RadioButton x:Name="tamam1" Content="Tamamlandı" Margin="0,0,0,3"/>
-                    <RadioButton x:Name="bekle1" Content="Bekliyor" Margin="0,0,0,3"/>
-                    <RadioButton x:Name="incele1" Content="İncelenecek" Margin="0,0,0,3"/>
-                    <RadioButton x:Name="iptal1" Content="İptal Edildi" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="tamam1" Checked="tamam1_Checked" Content="Tamamlandı" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="bekle1" Checked="bekle1_Checked" Content="Bekliyor" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="incele1" Checked="incele1_Checked" Content="İncelenecek" Margin="0,0,0,3"/>
+                    <RadioButton x:Name="iptal1" Checked="iptal1_Checked" Content="İptal Edildi" Margin="0,0,0,3"/>
                 </StackPanel>
             </DockPanel>
         </Border>

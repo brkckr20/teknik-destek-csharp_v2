@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
     <PackageReference Include="DataGridExtensions" Version="2.6.0" />
     <PackageReference Include="Fluent.Ribbon" Version="11.0.1" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
