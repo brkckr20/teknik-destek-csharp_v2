@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Bookmark.png" />
+    <None Remove="Code.png" />
     <None Remove="Find User Male_1.png" />
     <None Remove="NewWins\Lists\Request Service.png" />
     <None Remove="NewWins\Request Service.png" />
@@ -37,6 +38,7 @@
 
   <ItemGroup>
     <Resource Include="Bookmark.png" />
+    <Resource Include="Code.png" />
     <Resource Include="Find User Male_1.png" />
     <Resource Include="NewWins\Lists\Request Service.png" />
     <Resource Include="NewWins\Request Service.png" />

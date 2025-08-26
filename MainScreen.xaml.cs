@@ -88,5 +88,11 @@ namespace ExtremeTaleplerV2
             UControls.UC_KullaniciVeDepartmanKarti uc = new UControls.UC_KullaniciVeDepartmanKarti(Utils.Enums.CardType.Kullanici);
             AddOrSelectTab("Kullanıcı Kartı", uc);
         }
+
+        private void btnDosyaOlustur_Click(object sender, RoutedEventArgs e)
+        {
+            UControls.UC_DosyaOlustur uc = new UControls.UC_DosyaOlustur();
+            AddOrSelectTab("Rapor Dosyası Dluştur", uc);
+        }
     }
 }

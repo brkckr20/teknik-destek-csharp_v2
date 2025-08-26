@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\casper\Desktop\Klasörler\ExtremeTalepler\ExtremeTaleplerV2\ExtremeTaleplerV2\App.xaml
-18-587280210
+19833679310
 
-26851043590
+27-1564589136
 236-68665965
-MainScreen.xaml;MainWindow.xaml;NewWins\Lists\WinDepartmanListesi.xaml;NewWins\Lists\WinKullaniciListesi.xaml;NewWins\WinDetayEkle.xaml;NewWins\WinDetayGoruntule.xaml;NewWins\WinDetayGuncelle.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_KullaniciVeDepartmanKarti.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
+MainScreen.xaml;MainWindow.xaml;NewWins\Lists\WinDepartmanListesi.xaml;NewWins\Lists\WinKullaniciListesi.xaml;NewWins\WinDetayEkle.xaml;NewWins\WinDetayGoruntule.xaml;NewWins\WinDetayGuncelle.xaml;NewWins\WinTalepEkleGuncelle.xaml;UControls\UC_DosyaOlustur.xaml;UControls\UC_KullaniciVeDepartmanKarti.xaml;UControls\UC_TalepIslemleri.xaml;UControls\uTalepListesi.xaml;wins\winAciklamaEkle.xaml;wins\winTalepAciklamalariniGoster.xaml;wins\winTalepDetayiGuncelle.xaml;wins\winTalepGuncelle.xaml;wins\winTalepKaydet.xaml;wins\winYeniTalepEkle.xaml;winTalepGuncelle.xaml;
 
 False
 

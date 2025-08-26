@@ -16,7 +16,6 @@
         <ribbon:Ribbon Grid.Row="0" Margin="0,-24,0,0" x:Name="mainRibbon" ShowQuickAccessToolBarOnTop="False" VerticalAlignment="Top" FontFamily="Bahnschrift">
             <RibbonTab Header="Genel">
                 <RibbonGroup Header="İşlemler">
-                    <!--<RibbonButton x:Name="btnYeniTalepEkle" Label="Yeni Talep Ekle" LargeImageSource="/Plus.png"/>-->
                     <RibbonButton x:Name="btnTalepIslemleri" Click="btnTalepIslemleri_Click" Label="Talep İşlemleri" LargeImageSource="/Bookmark.png"/>
                 </RibbonGroup>
             </RibbonTab>
@@ -24,6 +23,12 @@
                 <RibbonGroup Header="Kart İşlemleri">
                     <RibbonButton x:Name="btnKullaniciKarti" Click="btnKullaniciKarti_Click" Label="Kullanıcı Kartı" LargeImageSource="/Find User Male_1.png"/>
                     <RibbonButton x:Name="btnDepartmanKarti" Click="btnDepartmanKarti_Click" Label="Departman Kartı" LargeImageSource="/Toolbox.png" />
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Rapor">
+                <RibbonGroup Header="Rapor İşlemleri">
+                    <RibbonButton x:Name="btnDosyaOlustur" Click="btnDosyaOlustur_Click" Label="Rapor Dosyası Oluştur" LargeImageSource="/Plus.png"/>
+                    <RibbonButton x:Name="btnKodOlustur" Label="Kod Oluştur" LargeImageSource="/Code.png"/>
                 </RibbonGroup>
             </RibbonTab>
         </ribbon:Ribbon>
