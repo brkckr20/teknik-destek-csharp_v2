@@ -41,31 +41,31 @@ namespace ExtremeTaleplerV2.UControls
             DBOperations.SetGrid(grdIslemler, filtreDurumu);
         }
 
-        private void chtumu_Checked(object sender, System.Windows.RoutedEventArgs e)
+        private void chtumu_Checked(object sender, RoutedEventArgs e)
         {
             filtreDurumu = "-1";
             RadioButtonaGoreFiltrele();
         }
 
-        private void chtamamlan_Checked(object sender, System.Windows.RoutedEventArgs e)
+        private void chtamamlan_Checked(object sender, RoutedEventArgs e)
         {
             filtreDurumu = "2";
             RadioButtonaGoreFiltrele();
         }
 
-        private void chbekleyen_Checked(object sender, System.Windows.RoutedEventArgs e)
+        private void chbekleyen_Checked(object sender, RoutedEventArgs e)
         {
             filtreDurumu = "1";
             RadioButtonaGoreFiltrele();
         }
 
-        private void chiptal_Checked(object sender, System.Windows.RoutedEventArgs e)
+        private void chiptal_Checked(object sender, RoutedEventArgs e)
         {
             filtreDurumu = "0";
             RadioButtonaGoreFiltrele();
         }
 
-        private void chincele_Checked(object sender, System.Windows.RoutedEventArgs e)
+        private void chincele_Checked(object sender, RoutedEventArgs e)
         {
             filtreDurumu = "3";
             RadioButtonaGoreFiltrele();
